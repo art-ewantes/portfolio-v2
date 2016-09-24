@@ -90,7 +90,7 @@
 						padding: 15px
 					&:hover
 						.planc
-							opacity: 0
+							opacity: 1
 	.main_footer
 		padding: 25px 0
 		.copirating
@@ -146,8 +146,41 @@
 @media only screen and (min-width : 768px)
 	.mnu
 		display: inline-block !important
+		li
+			display: inline-block
+	.mnu
+		text-align: center
+		float: right
 
+		li
+			margin-left: 20px
+			margin-bottom: 0
+		li + li 
+			margin-left: 20px
+			margin-bottom: 0
+		.active
+			margin: 0
+		.ru
+			// border-left: none
+			// border: none
+			margin-left: 10px
+			a
+				display: block
+		.eng
+			margin-left: 10px
+			a
+				display: block
+			// border: none
+			// padding: 0
+		.lang
+			margin-bottom: 0
+			// padding: 0
+	.logo
+		margin-right: 100px
 
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)
+// 	.mnu
+// 		display: inline-block !important
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
@@ -156,4 +189,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
+
+
+
 
