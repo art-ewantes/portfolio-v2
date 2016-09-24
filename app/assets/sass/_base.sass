@@ -1,33 +1,177 @@
 @import "bourbon"
 @import "vars"
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+*
+	margin: 0
+	padding: 0
 
-*:-moz-placeholder
-	color: #666
-	opacity: 1
 
-*::-moz-placeholder
-	color: #666
-	opacity: 1
+// *::-webkit-input-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*:-ms-input-placeholder
+// *:-moz-placeholder
+// 	color: #666
+// 	opacity: 1
+
+// *::-moz-placeholder
+// 	color: #666
+// 	opacity: 1
+
+// *:-ms-input-placeholder
+// 	color: #666
+// 	opacity: 1
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+
++placeholder
 	color: #666
-	opacity: 1
+
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+	color: #fff
+	font-family: $light
+	font-size: em(16px)
+	outline: none
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: #fff
+	font-family: $light
+	font-size: em(16px)
+	outline: none
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
-	font-family: $default-font
+	line-height: 1.4
+	font-family: $regular
 	overflow-x: hidden
+
+a:hover
+	color: #999
+
+a,
+a:hover,
+a:focus,
+a:active
+	outline: none
+	text-decoration: none
+	cursor: pointer !important
+	color: $accent
+
+button,
+a
+	cursor: pointer !important
+
+
+p
+	font-size: em(18px)
+	font-family: $regular
+
+h1
+	font-family: $regular
+	font-size: em(40px)
+
+h2
+	font-family: $light
+	font-size: em(25px)
+
+img
+	max-width: 100%
+	height: auto
+
+section
+	width: 100%
+	height: auto
+	overflow: hidden
+	padding: 100px 0
+	h1,h2
+		color: #fff
+		display: block
+		text-align: center
+		margin: 0 auto 30px auto
+
+form
+	display: block
+
+
+
+blockquote
+	display: block
+	position: relative
+	padding: 70px 0
+	max-width: 700px
+	margin: 0 auto
+	h5
+		font-size: em(20px)
+		font-family: $regular
+		text-transform: uppercase
+		color: #fff
+	p
+		font-size: em(18px)
+		font-family: $light
+		margin-top: 10px
+		color: #fff
+	&:before
+		position: absolute
+		top: 0px
+		left: 50%
+		transform: translateX(-50%)
+		color: $accent
+		font-size: em(30px)
+		content: "\f10d"
+		font-family: FontAwesome
+		font-style: normal
+		font-weight: normal
+		text-decoration: inherit
+	&:after
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		color: $accent
+		font-size: em(30px)
+		content: "\f10e"
+		font-family: FontAwesome
+		font-style: normal
+		font-weight: normal
+		text-decoration: inherit
+
+
+.view_port
+	text-align: center
+	a
+		display: inline-block
+		font-size: em(20px)
+		margin-top: 50px
+		transition: ease-in-out 0.3s
+		color: #fff
+		font-family: $light
+		padding: 13px 30px
+		border-radius: 6px
+		background-color: $accent
+		text-decoration: none
+		z-index: 5
+		&:hover
+			transition: ease-in-out 0.3s
+			color: #fff
+			background-color: #000
+
+
+
+
+

@@ -10,18 +10,120 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.carousel_testemonials
+		blockquote
+			max-width: 500px
+			p
+				font-size: em(14px)
+			h5
+				font-size: em(16px)
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
-
+	figure.effect-bubba:hover img
+		opacity: .2
+	figure.effect-bubba img
+		opacity: .2
+	figure.effect-bubba p
+		opacity: 1
+		transform: translate3d(0, 0,0)
+	figure.effect-bubba h2
+		opacity: 1
+		transform: translate3d(0, 0,0)
+	figure.effect-bubba figcaption::before
+		opacity: 1
+		-webkit-transform: scale(1)
+		transform: scale(1)
+	figure.effect-bubba figcaption::after
+		opacity: 1
+		-webkit-transform: scale(1)
+		transform: scale(1)
+	figure.effect-bubba:hover h2
+		opacity: 1
+		-webkit-transform: translate3d(0,0,0)
+		transform: translate3d(0, 0,0)
+	figure.effect-bubba:hover p
+		opacity: 1
+		-webkit-transform: translate3d(0,0,0)
+		transform: translate3d(0, 0,0)
+	
+	.mnu
+		display: none
+	#toggle_mnu
+		display: inline-block
+		float: right
+	.mnu
+		text-align: center
+		clear: right
+		padding-top: 30px
+		float: none
+		li
+			display: block
+			margin: 0
+			margin-bottom: 30px
+		li + li 
+			margin-bottom: 30px
+			margin-left: 0
+		.active
+			margin: 0
+		.ru
+			margin-left: 0
+			padding-left: 0
+			border-left: none
+			border-top: 1px solid $accent
+		.eng
+			margin-left: 0
+			border-bottom: 1px solid $accent
+		.lang
+			margin-bottom: 0
+			padding: 10px 0
+	.about_us 
+		.team_cont 
+			.thumbneill 
+				img
+					width: 100%
+					height: auto
+				.planc_cont
+					.planc
+						opacity: 1
+						padding: 15px
+					&:hover
+						.planc
+							opacity: 0
+	.main_footer
+		padding: 25px 0
+		.copirating
+			text-align: center
+			margin-top: 20px
+		.social
+			text-align: center
+@media only screen and (max-width : 650px)
+	.carousel_testemonials
+		blockquote
+			max-width: 400px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	.title
+		h1
+			font-size: em(40px)
+	h1
+		font-size: em(30px)
+	h2
+		font-size: em(20px)
+	figure.effect-bubba h2
+		font-size: em(15px)
+	.blog_item
+		img
+			width: 280px
+			max-width: 100%
+		p
+			overflow: hidden
+			font-size: em(16px)
+			max-height: 180px
+		.title_blog
+			font-size: em(18px)
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -42,7 +144,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	.mnu
+		display: inline-block !important
 
 
 /* Medium Devices, Desktops */

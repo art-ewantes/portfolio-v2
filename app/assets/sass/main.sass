@@ -4,4 +4,519 @@
 
 //Custom styles here
 
+// recent_work start
+
+.recent_work
+	width: 100%
+	height: auto
+	overflow: hidden
+	background-color: $bg
+	h1,h2
+		color: #fff
+		display: block
+		text-align: center
+		margin: 0
+	h2
+		padding-top: 20px
+
+
+.container_port
+	width: 100%
+	height: auto
+	margin-top: 60px
+.grid 
+	position: relative
+	clear: both
+	margin: 0 auto
+	padding: 1em 0 4em
+	max-width: 100%
+	list-style: none
+	text-align: center
+	h2
+		font-size: em(18px)
+	figure
+		position: relative
+		float: left
+		overflow: hidden
+		min-width: 100%
+		max-width: 100%
+		height: auto
+		background: #3085a3
+		text-align: center
+		cursor: pointer
+		h2
+			word-spacing: -0.15em
+			font-weight: 300
+			margin: 0
+		p
+			margin: 0
+			letter-spacing: 1px
+			font-size: 11px
+			color: #fff
+			overflow: hidden
+		img
+			position: relative
+			display: block
+			min-height: auto
+			max-width: 100%
+			min-width: 100%
+			opacity: 0.8
+		figcaption
+			padding: 2em
+			color: #fff
+			font-size: 1.25em
+			-webkit-backface-visibility: hidden
+			backface-visibility: hidden
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			>a
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 1000
+				text-indent: 200%
+				white-space: nowrap
+				font-size: 0
+				opacity: 0
+			&:before, 
+			&:after
+				pointer-events: none
+figure.effect-bubba
+	background-color: $bg_dark
+	h2
+		padding-top: 35%
+		opacity: 0
+		-webkit-transition: -webkit-transform 0.35s
+		transition: transform 0.35s
+		-webkit-transform: translate3d(0,-20px,0)
+		transform: translate3d(0,-20px,0)
+		color: #fff
+		font-family: $regular
+	p
+		padding: 20px 2.5em
+		opacity: 0
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+		transition: opacity 0.35s, transform 0.35s
+		-webkit-transform: translate3d(0,20px,0)
+		transform: translate3d(0,20px,0)
+		color: $accent_silver
+		font-family: $italic
+	img
+		opacity: 1
+		transition: opacity .35s ease-in-out
+		-moz-transition: opacity .35s ease-in-out
+		-webkit-transition: opacity .35s ease-in-out
+	figcaption
+		&:before,
+		&:after
+			position: absolute
+			top: 30px
+			right: 30px
+			bottom: 30px
+			left: 30px
+			content: ''
+			opacity: 0
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+			transition: opacity 0.35s, transform 0.35s
+		&:before
+			border-top: 1px solid #fff
+			border-bottom: 1px solid #fff
+			-webkit-transform: scale(0,1)
+			transform: scale(0,1)
+		&:after
+			border-right: 1px solid #fff
+			border-left: 1px solid #fff
+			-webkit-transform: scale(1,0)
+			transform: scale(1,0)
+	&:hover
+		img
+			opacity: 0.05
+
+		h2,
+		p
+			opacity: 1
+			-webkit-transform: translate3d(0,0,0)
+			transform: translate3d(0,0,0)
+		figcaption
+			&:before,
+			&:after
+				opacity: 1
+				-webkit-transform: scale(1)
+				transform: scale(1)
+
+
+
+
+// recent_work end
+
+// about_us start
+
+.about_us
+	background-color: $bg_dark
+	h1
+		color: #fff
+		display: block
+		text-align: center
+	.team_cont
+		position: relative
+		overflow: hidden
+		margin-top: 30px
+		.thumbneill
+			width: 100%
+			height: auto
+			position: relative
+			.planc_cont
+				position: absolute
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				display: block
+				width: 100%
+				height: 100%
+				.planc
+					position: absolute
+					display: block
+					width: 100%
+					height: auto
+					bottom: 0
+					left: 0
+					background-color: $accent_silver
+					font-size: em(13px)
+					font-family: $light
+					padding: 0
+					transition: ease-out .3s
+					opacity: 0
+				&:hover
+					.planc
+						opacity: 1
+						padding: 15px
+						transition: ease-out .3s
+				// &:hover
+				// 	opacity: 1
+				// 	padding: 20px
+				// 	transition: ease-out .3s
+			&:hover
+				.planc
+					&:hover
+						opacity: 1
+						padding: 20px
+						transition: ease-out .3s
+				// opacity: .2
+
+			img
+				object-fit: cover
+		.team_title
+			display: block
+			text-align: left
+		p
+			color: $silver
+			font-size: em(16px)
+		h1
+			font-size: em(24px)
+			margin: 0
+			padding: 15px 0
+			display: block
+			text-align: left
+		.social
+			padding: 15px 0
+			.fa
+				color: $silver
+				transition: ease-out .2s
+				cursor: pointer
+				font-size: em(20px)
+				&:hover
+					color: $accent_silver
+					transition: ease-out .2s
+					cursor: pointer
+			.fa
+				margin-right: 10px
+
+
+// about_us end
+
+
+// testemonials start
+.testemonials
+	background-color: $bg
+.carousel_testemonials
+	position: relative
+	blockquote
+		display: block
+		position: relative
+		padding: 70px 0
+		max-width: 700px
+		margin: 0 auto
+		h5
+			font-size: em(20px)
+			font-family: $regular
+			text-transform: uppercase
+			color: #fff
+		p
+			font-size: em(18px)
+			font-family: $light
+			margin-top: 10px
+			color: #fff
+		&:before
+			position: absolute
+			top: 0px
+			left: 50%
+			transform: translateX(-50%)
+			color: $accent
+			font-size: em(30px)
+			content: "\f10d"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+		&:after
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			color: $accent
+			font-size: em(30px)
+			content: "\f10e"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+
+
+.owl-prev, 
+.owl-next
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+
+.owl-prev
+	left: 0
+.owl-next
+	right: 0
+.owl-theme 
+	.owl-nav 
+		[class*=owl-]
+			background-color: transparent
+			&:hover
+				background-color: transparent
+
+// testemonials end
+
+// blog start
+
+.blog
+	background-color: $bg_dark
+
+.blog_item
+	display: block
+	width: 362px
+	max-width: 100%
+	height: 625px
+	box-sizing: border-box
+	border-image-source: initial
+	border-image-slice: initial
+	border-image-width: initial
+	border-image-outset: initial
+	border-image-repeat: initial
+	background-color: rgba(256, 256, 256,.2)
+	border-width: 3px 3px 3px
+	border-style: solid
+	border-color: #fff
+	border-bottom: 3px solid #fff
+	z-index: 10
+	margin: 50px auto 50px auto
+	padding: 0px
+	-webkit-transform: scale(1,1)
+	-webkit-transition-timing-function: ease-out
+	-webkit-transition-duration: 550ms
+	-moz-transform: scale(1,1)
+	-moz-transition-timing-function: ease-out
+	-moz-transition-duration: 550ms
+	&:hover
+		-webkit-transform: scale(1.2,1.2)
+		-webkit-transition-timing-function: ease-out
+		-webkit-transition-duration: 550ms
+		-moz-transform: scale(1.2,1.2)
+		-moz-transition-timing-function: ease-out
+		-moz-transition-duration: 550ms
+		z-index: 10
+	img
+		display: block
+		width: 320px
+		height: 184px
+		margin: 10px auto
+	.title_blog
+		box-sizing: border-box
+		min-height: 105px
+		font-size: 24px
+		line-height: 28px
+		padding: 10px 25px
+	a
+		text-align: left
+		border-bottom: 1px solid rgb(215, 215, 215)
+		margin: 0px
+		color: #fff
+		transition: ease-out .2s
+		&:hover
+			color: $accent
+			transition: ease-out .2s
+	p
+		margin: 20px
+		padding: 0
+		font-size: em(15px)
+		color: #fff
+		font-family: $light
+	.button
+		padding: 15px 100px
+		-webkit-border-radius: 30px
+		border-radius: 30px
+		color: #23262C
+		text-align: center;
+		border-image-source: initial
+		border-image-slice: initial
+		border-image-width: initial
+		border-image-outset: initial
+		border-image-repeat: initial
+		background-color: #3C3F45
+		border-radius: 3px
+		border-width: initial
+		border-style: none
+		border-color: initial
+		padding: 9px 30px
+		margin: 0 20px
+		transition: 0.2s linear
+		font-size: em(18px)
+		&:hover
+			background-color: $accent
+			color: #fff
+
+
+// blog end
+
+// contact start
+
+.contact
+	background-color: $bg
+	.main_form
+		width: 100%
+		height: auto
+		margin-top: 100px
+		label
+			margin-bottom: 1px
+			display: block
+			.help-block
+				ul
+					list-style-type: none
+					list-style-position: inside
+					li
+						color: $accent
+						font-size: em(12px)
+						margin-left: 10px
+		input,
+		textarea
+			width: 100%
+			box-sizing: border-box
+			background-color: $bg_dark
+			padding: 15px
+			font-size: em(16px)
+			box-shadow: none
+			border: none
+			font-family: $light
+		textarea
+			height: 330px
+			resize: vertical
+		button
+			cursor: pointer
+			background: #3C3F45
+			border: none
+			color: $bg_dark
+			cursor: pointer
+			display: inline-block
+			font-size: 18px
+			font-weight: 500
+			padding: 16px 40px
+			text-align: center
+			vertical-align: middle
+			width: auto
+			margin-top: 30px
+			transition: background 0.1s linear 0s, color 0.1s linear 0s
+			text-transform: capitalize
+			transition: ease-out .3s
+			&:active,
+			&:focus
+				outline: none
+			&:hover
+				color: #fff
+				background-color: $accent
+				transition: ease-out .3s
+	.contact_details
+		margin-top: 100px
+		text-align: left
+		h1
+			display: block
+			margin: 0 0 30px 0
+			text-align: left
+			font-family: $light
+			font-size: em(25px)
+			text-transform: uppercase
+		a
+			display: block
+			margin-bottom: 30px
+		span
+			display: block
+			font-size: em(15px)
+			font-family: $light
+			margin: 0 0 30px 0
+			color: $silver
+
+
+
+
+// contact end
+
+
+
+// footer start
+
+.main_footer
+	background-color: $bg_dark
+	display: block
+	padding: 50px 0
+	.copirating
+		font-family: $light
+		text-align: right
+		color: #fff
+		span
+			color: $accent
+			text-transform: uppercase
+	.social
+		text-align: left
+		.fa
+			display: inline-block
+			color: #fff
+			font-size: em(20px)
+			margin-right: 20px
+			transition: ease-out .3s
+			&:hover
+				color: $accent
+				transition: ease-out .3s
+
+
+
+
+
+
+// footer end
+
+
+
+
+
+
+
 @import "media"

@@ -53,7 +53,12 @@ gulp.task('headersass', function() {
 gulp.task('libs', function() {
 	return gulp.src([
 		'app/assets/libs/jquery/dist/jquery.min.js',
-		// 'app/libs/magnific-popup/magnific-popup.min.js'
+		"app/assets/libs/html5shiv/dist/html5shiv.min.js",
+		"app/assets/libs/respond/dest/respond.min.js",
+		"app/assets/libs/scroll2id/PageScroll2id.min.js",
+		"app/assets/libs/owl.carousel/dist/owl.carousel.min.js",
+		"app/assets/libs/validator/jqBootstrapValidation.js",
+		"app/assets/libs/particles.js/particles.min.js",
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

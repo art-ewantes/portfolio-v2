@@ -1,5 +1,167 @@
 @import "bourbon"
 @import "assets/sass/vars"
 @import "assets/sass/base"
-
+// @import "assets/sass/fonts"
 //First screen styles
+
+
+.main_header
+	width: 100%
+	position: relative
+	overflow: hidden
+
+
+#particles-js
+	position: relative
+	width: 100%
+	height: 100vh
+	background-color: $bg
+	background-image: url('')
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	z-index: -1
+	canvas
+		display: inline-block
+		vertical-align: bottom
+		
+
+.title
+	position: absolute
+	z-index: 100
+	top: 50%
+	left: 50%
+	transform: translateY(-50%) translateX(-50%)
+	text-align: center
+	z-index: 1000000
+	
+	h1,p
+		color: $accent
+	h1
+		font-size: em(50px)
+		font-family: $rawwwr
+		font-weight: 800
+		text-transform: uppercase
+		border: 5px solid #de5e60
+		padding: 0 20px
+		margin: 0
+		letter-spacing: 1px
+	p
+		margin-top: 10px
+		font-size: em(18px)
+		font-family: $light
+
+.scroll-down
+	color: $accent
+	display: inline-block
+	z-index: 100000000
+	cursor: pointer !important
+	height: 50px
+	width: 50px
+	position: absolute
+	bottom: 40px
+	left: 50%
+	transform: translateX(-50%)
+	span
+		-webkit-animation-name: drop
+		-webkit-animation-duration: 1s
+		-webkit-animation-timing-function: linear
+		-webkit-animation-delay: 0s
+		-webkit-animation-iteration-count: infinite
+		-webkit-animation-play-state: running
+		animation-name: drop
+		animation-duration: 1s
+		animation-timing-function: linear
+		animation-delay: 0s
+		animation-iteration-count: infinite
+		animation-play-state: running
+
+@-webkit-keyframes drop
+	0%
+		top: 0px
+		opacity: 0
+
+	30%
+		top: 10px
+		opacity: 1
+
+	100%
+		top: 25px
+		opacity: 0
+
+
+@keyframes drop
+	0%
+		top: 0px
+		opacity: 0
+
+	30%
+		top: 10px
+		opacity: 1
+
+	100%
+		top: 25px
+		opacity: 0
+
+// main
+// 	height: 100vh
+
+
+
+nav
+	width: 100%
+	height: auto
+	background-color: $bg_dark
+	padding: 20px 0
+
+.mnu
+	display: inline-block
+	list-style-type: none
+	float: right
+	li
+		display: inline-block
+		vertical-align: middle
+		margin-left: 0
+		a
+			color: #fff
+			font-size: em(16px)
+			text-transform: uppercase
+			font-family: $light
+			transition: ease-out .2s
+			&:hover
+				color: $accent
+				transition: ease-out .2s
+		.active
+			color: $accent
+	li + li
+		margin-left: 50px
+	.lang
+		a
+			font-size: em(13px)
+		margin-left: 0
+	.ru
+		border-left: 1px solid $accent
+		margin-left: 10px
+		padding-left: 15px
+	.eng
+		margin-left: 10px
+#toggle_mnu
+	display: none
+.logo
+	display: inline-block
+	vertical-align: middle
+	font-size: em(20px)
+	text-transform: uppercase
+	font-family: $rawwwr
+	font-weight: bold
+
+
+
+
+
+
+
+
+
+
+

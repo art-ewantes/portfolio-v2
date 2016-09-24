@@ -1,0 +1,29 @@
+{
+  "name": "art-ewantes",
+  "description": "portfolio-v2",
+  "main": "index.js",
+  "authors": [
+    "art-ewantes"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "web-rawwwr"
+  ],
+  "homepage": "https://github.com/art-ewantes/portfolio-v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "owl.carousel": "^2.1.6",
+    "html5shiv": "^3.7.3",
+    "bourbon": "^4.2.7",
+    "scrolltoid": "*",
+    "parallax": "^2.1.3",
+    "particles.js": "^2.0.0"
+  }
+}
