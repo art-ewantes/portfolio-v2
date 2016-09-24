@@ -60,6 +60,7 @@ gulp.task('libs', function() {
 		"app/assets/libs/validator/jqBootstrapValidation.js",
 		"app/assets/libs/particles.js/particles.min.js",
 		"app/assets/libs/animated/animated.js",
+		"app/assets/libs/particles.js/part_add.js",
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
