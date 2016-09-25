@@ -67,15 +67,15 @@
 			margin-left: 0
 		.active
 			margin: 0
-		.ru
+		.qtranxs-lang-menu-item-ru
 			margin-left: 0
 			padding-left: 0
 			border-left: none
 			border-top: 1px solid $accent
-		.eng
+		.qtranxs-lang-menu-item-en
 			margin-left: 0
 			border-bottom: 1px solid $accent
-		.lang
+		.qtranxs-lang-menu-item
 			margin-bottom: 0
 			padding: 10px 0
 	.about_us 
@@ -168,19 +168,19 @@
 			margin-bottom: 0
 		.active
 			margin: 0
-		.ru
+		.qtranxs-lang-menu-item-ru
 			// border-left: none
 			// border: none
 			margin-left: 10px
 			a
 				display: block
-		.eng
+		.qtranxs-lang-menu-item-en
 			margin-left: 10px
 			a
 				display: block
 			// border: none
 			// padding: 0
-		.lang
+		.qtranxs-lang-menu-item
 			margin-bottom: 0
 			// padding: 0
 	.logo
@@ -198,6 +198,25 @@
 @media only screen and (min-width : 1200px)
 	/**/
 
+// breakpoints
+  
+      
+
+// media queries
+
+@mixin MQ($canvas) 
+	@if $canvas == S 
+		@media only screen and (min-width: $S)  
+			@content;  
+  
+	@else if $canvas == M 
+		@media only screen and (min-width: $M)  
+			@content;  
+  
+	@else if $canvas == L 
+		@media only screen and (min-width: $L)  
+			@content;  
+  
 
 
 

@@ -148,6 +148,7 @@ nav
 		display: inline-block
 		vertical-align: middle
 		margin-left: 0
+		color: #fff
 		a
 			color: #fff
 			font-size: em(16px)
@@ -157,19 +158,21 @@ nav
 			&:hover
 				color: $accent
 				transition: ease-out .2s
-		.current_page_item
+	.current_page_item,
+	.current_manu_item
+		a
 			color: $accent
 	li + li
 		margin-left: 50px
-	.lang
+	.qtranxs-lang-menu-item
 		a
 			font-size: em(13px)
 		margin-left: 0
-	.ru
+	.qtranxs-lang-menu-item-ru
 		border-left: 1px solid $accent
 		margin-left: 10px
 		padding-left: 15px
-	.eng
+	.qtranxs-lang-menu-item-en
 		margin-left: 10px
 #toggle_mnu
 	display: none
