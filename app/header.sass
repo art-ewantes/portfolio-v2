@@ -138,8 +138,9 @@ nav
 	height: auto
 	background-color: $bg_dark
 	padding: 20px 0
-
-.mnu
+#block
+	z-index: 10000
+.menu
 	display: inline-block
 	list-style-type: none
 	float: right
@@ -156,7 +157,7 @@ nav
 			&:hover
 				color: $accent
 				transition: ease-out .2s
-		.active
+		.current_page_item
 			color: $accent
 	li + li
 		margin-left: 50px
@@ -183,10 +184,17 @@ nav
 
 
 
+.top_header
+	width: 100%
+	height: auto
+	nav
+		position: fixed
+		top: 0
 
 
-
-
+.f-nav
+	position: fixed
+	top: 0
 
 
 
